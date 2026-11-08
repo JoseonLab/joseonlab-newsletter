@@ -1,0 +1,250 @@
+<title>조선혁신소 데일리 브리핑</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
+<style>:root{--c:#22406B;--c-deep:#1B3357;--c-soft:#EAF1F9;--page:#FFFFFF;--line:#DDE4EE;
+  --ttl:#1B2A44;--txt:#46536A;--mut:#94A3B8;--up:#C0392B;--shell:#DFE5EC;--key:#B45309;--key-soft:#FDF3E3}
+*{box-sizing:border-box}
+body{margin:0;background:var(--shell);color:#46536A;
+  font-family:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  word-break:keep-all;overflow-wrap:break-word;hyphens:none;text-wrap:pretty;-webkit-font-smoothing:antialiased}
+.deck{max-width:1280px;margin:0 auto;padding:26px 16px 40px;display:flex;flex-direction:column;gap:20px}
+.frame{width:100%;aspect-ratio:1280/720;overflow:hidden;border-radius:6px;
+  box-shadow:0 10px 30px rgba(16,24,40,.16);background:#fff}
+.slide{width:1280px;height:720px;overflow:hidden;transform-origin:top left;transform:scale(var(--s,1));
+  position:relative;background:var(--page);padding:52px 100px 50px;display:flex;flex-direction:column}
+.slide::before{content:"";position:absolute;top:0;left:0;right:0;height:10px;background:var(--c)}
+.inner{flex:1;min-height:0;display:flex;flex-direction:column;transform-origin:top left}
+.wm{position:absolute;right:100px;bottom:18px;font-size:14px;font-weight:700;color:#0f172a;opacity:.14;letter-spacing:1.5px}
+
+.cover{background:#fff;padding:0}
+.cover::before{height:14px;background:var(--c-deep)}
+.cov-txt{position:absolute;left:56px;top:56px;width:600px}
+.cov-eyebrow{font-size:14px;font-weight:900;color:var(--ttl);letter-spacing:2.4px}
+.cov-title{font-size:52px;font-weight:900;color:var(--c-deep);letter-spacing:-1.6px;line-height:1.18;margin:20px 0 0}
+.cov-lead{font-size:19px;font-weight:500;color:var(--txt);line-height:1.5;margin:22px 0 0}
+.cov-meta{display:flex;align-items:center;gap:12px;margin-top:28px;font-size:14px;font-weight:700;color:var(--ttl)}
+.cov-meta i{display:block;width:22px;height:3px;background:var(--c-deep);border-radius:2px}
+.cov-art{position:absolute;left:52px;bottom:44px;width:740px}
+.cov-art img{width:100%;height:auto;display:block}
+.cov-index{position:absolute;right:56px;top:56px;width:420px;height:608px;background:var(--c-deep);
+  border-radius:8px;padding:26px 30px;display:flex;flex-direction:column}
+.cov-ixhead{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:4px}
+.cov-ixttl{font-size:19px;font-weight:900;color:#fff}
+.cov-ixsub{font-size:11px;font-weight:700;color:#93A7C4;letter-spacing:3px}
+.cov-ixlist{list-style:none;margin:0;padding:0;flex:1;display:flex;flex-direction:column;justify-content:space-evenly}
+.cov-ix{display:flex;gap:14px;align-items:flex-start;padding:9px 0;border-top:1px solid rgba(255,255,255,.16)}
+.cov-ixno{font-size:11.5px;font-weight:900;color:#8FA5C6;padding-top:3px;width:20px;flex-shrink:0}
+.cov-ixnm{font-size:15px;font-weight:700;color:#fff;letter-spacing:-.2px}
+.cov-ixsb{display:block;font-size:11px;font-weight:500;color:#9FB2CD;margin-top:3px}
+
+.chip{display:inline-flex;flex-shrink:0;align-items:center;gap:9px;align-self:flex-start;
+  font-size:16px;font-weight:700;color:#fff;background:var(--c);border-radius:999px;padding:8px 20px}
+.chip i{width:8px;height:8px;border-radius:50%;background:#fff;opacity:.85}
+.chip .no{font-size:12px;font-weight:700;color:#B8CBE4;margin-left:5px;letter-spacing:.6px}
+
+.stitle{flex-shrink:0;font-size:34px;font-weight:900;color:var(--c-deep);letter-spacing:-1.1px;line-height:1.2;margin:30px 0 0;text-wrap:balance}
+.rule{height:3px;flex:0 0 3px;margin:24px 0 26px;border-radius:3px;background:linear-gradient(90deg,var(--c),rgba(34,64,107,.10))}
+.lead{flex-shrink:0;font-size:14.5px;line-height:1.7;color:var(--ttl);font-weight:500;margin:0 0 24px;max-width:76ch}
+
+.row{display:flex;flex-shrink:0;gap:24px}
+.nc{flex:1;min-width:0;position:relative;border:1.5px solid var(--line);border-radius:16px;
+  padding:22px 24px 20px;background:#FCFDFE;display:flex;flex-direction:column}
+.nc::before{content:"";position:absolute;left:0;top:20px;bottom:20px;width:4px;background:var(--c);border-radius:0 4px 4px 0}
+.nc.key::before{background:var(--key)}
+.kick{align-self:flex-start;font-size:12px;font-weight:900;color:var(--c);
+  background:var(--c-soft);padding:5px 11px;border-radius:7px;letter-spacing:.3px}
+.kick.key{background:var(--key-soft);color:var(--key)}
+.nc h3{font-size:18px;font-weight:900;color:var(--ttl);letter-spacing:-.7px;line-height:1.4;margin:14px 0 13px;text-wrap:balance}
+.flow{margin:0;font-size:12.9px;line-height:1.85;color:var(--txt);letter-spacing:-.15px}
+.flow span.s{display:block;margin-bottom:9px}
+.flow span.s:last-of-type{margin-bottom:0}
+.flow .read{color:var(--ttl);font-weight:500}
+.n{font-weight:700;color:var(--ttl);white-space:nowrap}
+.n.up{color:var(--up)}
+.nb{white-space:nowrap}
+.src{margin-top:auto;padding-top:14px;font-size:10.5px;line-height:1.6;color:var(--mut)}
+.src a{color:var(--c);text-decoration:none;border-bottom:1px dotted rgba(34,64,107,.5)}
+.xref{display:inline-block;margin-top:5px;font-size:10.5px;font-weight:700;color:var(--c);
+  background:var(--c-soft);border-radius:5px;padding:2px 7px}
+
+.dl{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:16px}
+.dl li{padding-bottom:15px;border-bottom:1px solid #EEF2F7}
+.dl li:last-child{border-bottom:none;padding-bottom:0}
+.dl b{display:block;font-size:14px;font-weight:800;color:var(--ttl);line-height:1.42}
+.dl p{margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--txt)}
+.dl a{display:inline-block;margin-top:5px;font-size:10.5px;color:var(--c);text-decoration:none;border-bottom:1px dotted rgba(34,64,107,.5)}
+
+.apply{display:flex;flex-shrink:0;gap:16px;align-items:flex-start;margin:20px 0 0;background:var(--c-soft);
+  border:1.5px solid #D3E1F0;border-radius:14px;padding:16px 20px}
+.apply-tag{flex-shrink:0;font-size:13px;font-weight:900;color:#fff;background:var(--c);border-radius:8px;padding:6px 13px;white-space:nowrap}
+.apply ul{margin:0;padding-left:17px;font-size:13.2px;line-height:1.8;color:#33507B;letter-spacing:-.15px}
+.apply li{margin:2px 0}
+.apply b{color:var(--c-deep)}
+.foot-note{flex-shrink:0;margin:16px 0 0;font-size:11.5px;color:var(--mut)}
+
+.drow{display:flex;flex-shrink:0;gap:24px}
+.panel{flex:1;min-width:0;border:1.5px solid var(--line);border-radius:16px;background:#FCFDFE;
+  padding:15px 18px;display:flex;flex-direction:column}
+.panel h4{margin:0;font-size:16px;font-weight:900;color:var(--ttl)}
+.panel .psub{font-size:11px;color:var(--mut);margin:3px 0 9px;padding-bottom:8px;border-bottom:1.5px solid #F1F5F9}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11px;color:var(--txt);margin-top:6px}
+.legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:-1px}
+.dtable{width:100%;border-collapse:collapse;font-size:12px}
+.dtable th{font-size:9.5px;font-weight:900;color:#8290A3;text-align:right;padding:0 4px 7px 0;border-bottom:1px solid #E8EEF5}
+.dtable th:first-child{text-align:left}
+.dtable td{padding:15px 4px;border-top:1px solid #EDF1F6;text-align:right;font-weight:900;color:#1F3550}
+.dtable td:first-child{text-align:left;font-weight:700;color:#172B45}
+.dtable td small{display:block;font-size:8px;font-weight:600;color:#A0ACBA;margin-top:1px}
+.dtable .rk{color:#9BACBF;font-size:10px;font-weight:700;margin-right:7px}
+.dtable .up{color:#E3483E}.dtable .flat{color:#68778A}
+.dgrid{flex-shrink:0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0 0}
+.dgrid article{border:1px solid #DFE8F2;border-radius:12px;background:#F7FAFD;padding:10px 12px}
+.dgrid em{display:block;font-style:normal;font-size:9px;font-weight:900;color:#5B8FCA;letter-spacing:.6px}
+.dgrid b{display:block;font-size:14px;color:#142B45;margin:3px 0}
+.dgrid p{margin:0;font-size:9.5px;font-weight:600;line-height:1.45;color:#68798D}
+.dgrid .action{background:#173653;border-color:#173653}
+.dgrid .action em{color:#92C5FF}.dgrid .action b{color:#fff}.dgrid .action p{color:#DCE8F6}
+.srcbar{display:flex;flex-shrink:0;align-items:center;gap:16px;margin:20px 0 0;background:var(--c-soft);
+  border:1.5px solid #D3E1F0;border-radius:14px;padding:11px 18px;font-size:13px;color:#33507B}
+.srcbar b{color:var(--c);font-weight:900;padding-right:16px;border-right:1.5px solid #C6D7EA;white-space:nowrap}
+
+.wo{flex-shrink:0;border:1.5px solid var(--line);border-radius:16px;background:#FCFDFE;overflow:hidden}
+.wo-r{display:grid;grid-template-columns:1fr 104px 124px 132px 128px 92px;align-items:center;
+  gap:0 14px;padding:22px 24px;border-top:1px solid #EDF1F6}
+.wo-h{padding:12px 22px;border-top:none;background:#FAFCFE}
+.wo-h span{font-size:10px;font-weight:900;color:#8290A3;letter-spacing:.7px}
+.wo-t{font-size:15.5px;font-weight:900;color:var(--ttl);letter-spacing:-.3px;line-height:1.35}
+.wo-why{margin:5px 0 0;font-size:11.8px;color:var(--txt);line-height:1.5}
+.wo-fmt{display:flex;align-items:center;gap:9px}
+.mock{border:1.8px solid var(--c);border-radius:3px;background:#D9E5F3;flex-shrink:0}
+.mock.sq{width:26px;height:32px}.mock.pt{width:19px;height:34px}.mock.sl{width:34px;height:21px}
+.wo-fmt em{font-style:normal;font-size:10.5px;font-weight:800;color:var(--c);line-height:1.3}
+.wo-c{font-size:12px;color:var(--ttl);font-weight:600}
+.wo-c.mut{color:var(--txt);font-weight:500}
+.wo-src{font-size:11px;font-weight:700;color:var(--c);background:var(--c-soft);border-radius:5px;padding:3px 8px;justify-self:start}
+.wo-due{font-size:13px;font-weight:900;color:#C0392B;text-align:right}
+.wo-due small{display:block;font-size:9.5px;font-weight:700;color:var(--mut);margin-top:1px}
+
+.kit{background:var(--page)}
+.kit-sub{font-size:14px;color:var(--txt);margin:0 0 4px}
+.chgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0 auto}
+.ch{display:flex;align-items:center;gap:16px;background:#FCFDFE;border:1px solid var(--line);border-radius:14px;padding:18px 22px;text-decoration:none}
+.ch-ico{width:38px;height:38px;border-radius:9px;flex-shrink:0;display:block;object-fit:contain;background:#fff;border:1px solid #EEF2F7}
+.ch-nm{display:block;font-size:15px;font-weight:900;color:var(--ttl)}
+.ch-id{display:block;font-size:12px;color:var(--mut);margin-top:3px}
+.ch .arw{margin-left:auto;color:var(--c);font-size:17px;font-weight:700}
+.kit-foot{display:flex;justify-content:space-between;align-items:baseline;margin-top:auto;font-size:12px;color:var(--ttl);font-weight:700}
+.kit-foot span{color:var(--mut);font-weight:500}
+
+/* v2 — 2026-10-09 원고부터 (render.V2_FROM). 담당자 지시 261008: 「글자가 너무 작다, 핵심만 간결하게」.
+   brief.css 위에 덮어씁니다. 9/10~10/8 발행본은 이 파일 없이 조판되므로 골든 대조가 그대로입니다.
+   글자를 키운 만큼 원고 길이를 줄입니다 — 카드 문장 35자 안쪽(prompts/brief_writer.md 「v2 길이」). */
+
+/* 쪽 머리 — 간격을 줄여 본문 자리를 만든다 */
+.chip{font-size:16px;padding:7px 18px}
+.stitle{font-size:32px;margin:14px 0 0}
+.rule{margin:16px 0 18px}
+.lead{font-size:18px;line-height:1.6;margin:0 0 16px;font-weight:700;max-width:none}
+
+/* 카드 */
+.row{gap:20px}
+.nc{padding:18px 20px 16px}
+.kick{font-size:13px;padding:4px 10px}
+.nc h3{font-size:20px;line-height:1.35;margin:10px 0 10px}
+.flow{font-size:16px;line-height:1.6;letter-spacing:-.2px}
+.flow span.s{margin-bottom:6px}
+.src{font-size:11.5px;padding-top:10px}
+.xref{font-size:11.5px}
+
+/* 목록 카드 */
+.dl{gap:12px}
+.dl li{padding-bottom:11px}
+.dl b{font-size:16.5px;line-height:1.38}
+.dl p{font-size:14.5px;line-height:1.6;margin-top:4px}
+.dl a{font-size:12px}
+
+/* 제안 상자 */
+.apply{margin:16px 0 0;padding:14px 20px;gap:18px}
+.apply-tag{font-size:14px;padding:6px 13px}
+.apply ul{font-size:15.5px;line-height:1.6;color:#2A4670}
+.apply li{margin:1px 0}
+
+/* 작업표 */
+.wo-r{padding:11px 22px}
+.wo-h span{font-size:11.5px}
+.wo-t{font-size:17px}
+.wo-why{font-size:13.5px;margin-top:4px}
+.wo-fmt em{font-size:12px}
+.wo-c{font-size:13.5px}
+.wo-src{font-size:12px}
+.wo-due{font-size:15px}
+.wo-due small{font-size:11px}
+.srcbar{font-size:14px;padding:10px 18px}
+
+/* 추이 · 진단 */
+.panel h4{font-size:17px}
+.panel .psub{font-size:12.5px}
+.legend{font-size:12.5px}
+.dtable{font-size:13.5px}
+.dtable th{font-size:11px}
+.dtable td{padding:7px 4px}
+.dtable td small{font-size:10px}
+.dtable .rk{font-size:11.5px}
+.dgrid em{font-size:11px}
+.dgrid b{font-size:15.5px}
+.dgrid p{font-size:11.5px}
+
+/* 표지 */
+.cov-lead{font-size:21px}
+.cov-ixsb{font-size:12px}
+.dgrid{margin:12px 0 0;gap:10px}
+.dgrid article{padding:8px 11px}
+.panel{padding:12px 16px}
+
+/* 상품 카테고리 쪽 v2 (261008): 그래프 빼고 진단표(소분류 줄) + 소분류 설명 카드 크게 */
+.dwide{display:grid;grid-template-columns:1.12fr 1fr;gap:20px}
+.dwide .panel{display:flex;flex-direction:column}
+.dtable tr.sub td{padding:2px 4px 3px;border-top:0;font-size:12.5px;color:#4F6A8A;font-weight:800}
+.dtable tr.sub td:first-child{padding-left:26px;font-weight:700;color:#2C4766}
+.dtable tr.sub .kw{font-size:10.5px;font-weight:600;color:#8495A9;margin-left:8px}
+.dtable .sb{color:#B3C0CF;margin-right:6px}
+.dnote{margin:auto 0 0;padding-top:10px;border-top:1px solid #EEF2F7;font-size:11px;color:var(--mut);line-height:1.6}
+.dgrid.big{grid-template-columns:1fr 1fr;grid-auto-rows:1fr;gap:14px;margin:0}
+.dgrid.big article{padding:16px 18px;border-radius:16px;display:flex;flex-direction:column}
+.dgrid.big em{font-size:12.5px}
+.dgrid.big b{font-size:20px;margin:6px 0 8px;line-height:1.3}
+.dgrid.big p{font-size:14.5px;line-height:1.6;color:#4F6278}
+.dgrid.big .action p{color:#DCE8F6}
+.dwide .dtable td{padding-top:5px;padding-bottom:4px}
+.dwide .panel h4{margin-bottom:6px}
+
+/* 261016~ 뉴스 카드 원문 링크 */
+.org{display:inline-block;margin-top:4px;font-weight:700}
+</style>
+<style>@page{size:1280px 720px;margin:0}
+@media print{body{background:#fff}.deck{max-width:none;margin:0;padding:0;gap:0;display:block}
+.frame{width:1280px;height:720px;aspect-ratio:auto;border-radius:0;box-shadow:none;page-break-after:always;overflow:hidden}
+.frame:last-of-type{page-break-after:auto}.slide{transform:none !important}}</style>
+<div class="deck"><div class="frame"><section class="slide cover">
+<div class="cov-txt"><div class="cov-eyebrow">조선혁신소 · DAILY BRIEFING</div>
+<h1 class="cov-title">충남이 내년 예산<br>12조 5179억을 짰습니다.</h1><p class="cov-lead">전북 1800억 자펀드 · 서울 창업허브 25곳,<br>해외는 호주 · 美 CVS.</p>
+<div class="cov-meta"><i></i>트렌드 뉴스레터 · <span class="nb">2026-11-09</span></div></div>
+<div class="cov-art"><img src="https://joseonlab.github.io/joseonlab-newsletter/assets/cover-911.png" alt="조선혁신소 캐릭터 표지 일러스트"></div>
+<aside class="cov-index"><div class="cov-ixhead"><span class="cov-ixttl">목차</span><span class="cov-ixsub">INDEX</span></div>
+<ol class="cov-ixlist dense"><li class="cov-ix"><span class="cov-ixno">01</span><div><span class="cov-ixnm">국내·글로벌 빅 트렌드 ①</span><span class="cov-ixsb">충남 예산 · 전북 자펀드 · 서울 창업허브</span></div></li><li class="cov-ix"><span class="cov-ixno">02</span><div><span class="cov-ixnm">국내·글로벌 빅 트렌드 ②</span><span class="cov-ixsb">호주 K소비재 · 에이피알 CVS · 라네즈</span></div></li><li class="cov-ix"><span class="cov-ixno">03</span><div><span class="cov-ixnm">콘텐츠 업계 동향 ①</span><span class="cov-ixsb">숏폼 커머스 · 숏폼 드라마 · MKPICK</span></div></li><li class="cov-ix"><span class="cov-ixno">04</span><div><span class="cov-ixnm">콘텐츠 업계 동향 ②</span><span class="cov-ixsb">뷰티 캐릭터 · 아이돌 굿즈 · 편의점 빵</span></div></li><li class="cov-ix"><span class="cov-ixno">05</span><div><span class="cov-ixnm">AI 최신 동향</span><span class="cov-ixsb">기업 공식 블로그</span></div></li><li class="cov-ix"><span class="cov-ixno">06</span><div><span class="cov-ixnm">소비시장 동향 ①</span><span class="cov-ixsb">ESG 실천 · 지원 사업 · 소비 흐름</span></div></li><li class="cov-ix"><span class="cov-ixno">07</span><div><span class="cov-ixnm">소비시장 동향 ②</span><span class="cov-ixsb">코그페 · 코듀페 · 서울국제정원박람회</span></div></li><li class="cov-ix"><span class="cov-ixno">08</span><div><span class="cov-ixnm">판촉 품목 검색 수요</span><span class="cov-ixsb">네이버 검색광고</span></div></li><li class="cov-ix"><span class="cov-ixno">09</span><div><span class="cov-ixnm">콘텐츠 기획 제안</span><span class="cov-ixsb">이번 주에 만들 것</span></div></li><li class="cov-ix"><span class="cov-ixno">10</span><div><span class="cov-ixnm">AI 기술 적용 제안</span><span class="cov-ixsb">에이전트 반영</span></div></li><li class="cov-ix"><span class="cov-ixno">11</span><div><span class="cov-ixnm">공공 입찰 · 경쟁 동향</span><span class="cov-ixsb">나라장터 · 경쟁 서비스</span></div></li><li class="cov-ix"><span class="cov-ixno">12</span><div><span class="cov-ixnm">상품 카테고리 진단표</span><span class="cov-ixsb">중분류 › 소분류 · 검색어</span></div></li></ol><style>.cov-ixlist.dense .cov-ix{padding:5px 0}.cov-ixlist.dense .cov-ixnm{font-size:14px}.cov-ixlist.dense .cov-ixsb{margin-top:1px}</style></aside><div class="wm">조선혁신소</div></section></div><div class="frame"><section class="slide"><div class="inner"><span class="chip"><i></i>국내·글로벌 빅 트렌드 ①<span class="no">01 / 12</span></span><h2 class="stitle">국내·글로벌 빅 트렌드 ①</h2><div class="rule"></div><p class="lead">국내는 <span class="n">AI 전환 · 지역 창업 · 입주 공모</span>에 돈이 모입니다.</p><div class="row"><article class="nc"><span class="kick">국내 · AI 전환</span><h3>충남, 내년 예산 12조</h3><p class="flow"><span class="s">충남도가 내년 예산 <span class="n">12조 5179억 원</span>을 편성했습니다.</span><span class="s">농어촌 소득 · <span class="n">AI 전환</span> · 민생안정에 무게를 둡니다.</span><span class="s read">AI 전환 사업 참여 기업의 <span class="n">교육 영상</span>을 구독으로 맡습니다.</span></p><p class="src">출처: 농수축산신문 보도 · 2026-11-06<br><span class="org"><a href="https://www.aflnews.co.kr/news/articleView.html?idxno=331126" target="_blank" rel="noopener">원문 보기 &#8599;</a></span></p></article><article class="nc"><span class="kick">국내 · 창업 펀드</span><h3>전북, 1800억 자펀드</h3><p class="flow"><span class="s">전북도가 <span class="n">1800억 원</span> 규모 자펀드 조성을 추진합니다.</span><span class="s">공동 투자설명회 「V:Launch×J-피움」을 열었습니다.</span><span class="s read">투자 유치 스타트업의 <span class="n">피칭 숏폼</span>을 구독으로 맡습니다.</span></p><p class="src">출처: 한스경제 보도 · 2026-11-08<br><span class="org"><a href="http://www.hansbiz.co.kr/news/articleView.html?idxno=880994" target="_blank" rel="noopener">원문 보기 &#8599;</a></span></p></article><article class="nc"><span class="kick">국내 · 입주 공모</span><h3>서울 창업허브, 25곳 모집</h3><p class="flow"><span class="s">서울시가 마곡 · 창동 창업허브 입주기업 <span class="n">25개사</span>를 뽑습니다.</span><span class="s">창동은 <span class="n">문화 · 콘텐츠</span> 창업을 지원합니다.</span><span class="s read">입주 기업의 <span class="n">서비스 소개 숏폼</span>을 구독으로 맡습니다.</span></p><p class="src">출처: 뉴시스·BBS 보도 · 2026-11-09<br><span class="org"><a href="https://www.newsis.com/view/NISX20261106_0003858506" target="_blank" rel="noopener">원문 1 &#8599;</a> · <a href="https://news.bbsi.co.kr/news/articleView.html?idxno=4117271" target="_blank" rel="noopener">원문 2 &#8599;</a></span></p></article></div><div class="apply"><span class="apply-tag">💡 조선혁신소 AI가 제안하는 기획안</span><ul><li>「AI 전환 교육 영상 구독」 · 충남 참여 기업 · 목차 1장</li><li>「피칭 숏폼 구독」 · 전북 투자 유치 스타트업 · 샘플 1편</li><li>「서비스 소개 숏폼 구독」 · 창업허브 입주사 · 견적표 1장</li></ul></div></div><div class="wm">조선혁신소</div></section></div><div class="frame"><section class="slide"><div class="inner"><span class="chip"><i></i>국내·글로벌 빅 트렌드 ②<span class="no">02 / 12</span></span><h2 class="stitle">국내·글로벌 빅 트렌드 ②</h2><div class="rule"></div><p class="lead">해외는 <span class="n">호주 판로 · 美 매장 입점 · 체험 매장</span>이 뜹니다.</p><div class="row"><article class="nc"><span class="kick">해외 · 호주</span><h3>호주, K소비재 1800만달러</h3><p class="flow"><span class="s">호주 한류박람회에서 <span class="n">1800만달러</span> 수출계약 · MOU를 맺었습니다.</span><span class="s">상반기 호주 수입시장에서 한국산은 <span class="n">19.5%</span>로 2위입니다.</span><span class="s read">호주 진출 K소비재의 <span class="n">현지 매장 영상</span>을 구독으로 맡습니다.</span></p><p class="src">출처: 노컷뉴스·이데일리 보도 · 2026-11-08<br><span class="org"><a href="https://www.nocutnews.co.kr/news/6603686" target="_blank" rel="noopener">원문 1 &#8599;</a> · <a href="https://www.edaily.co.kr/News/Read?newsId=01397286645643752&amp;mediaCodeNo=257" target="_blank" rel="noopener">원문 2 &#8599;</a></span></p></article><article class="nc"><span class="kick">해외 · 美 매장</span><h3>에이피알, CVS 3000곳</h3><p class="flow"><span class="s">에이피알이 연내 CVS 약 <span class="n">3000개</span> 매장에 입점할 예정입니다.</span><span class="s">아마존 · 틱톡샵에 이어 타겟 · 월마트 · 코스트코로 넓혔습니다.</span><span class="s read">美 매장 입점 K뷰티의 <span class="n">매장용 영상</span>을 구독으로 맡습니다.</span></p><p class="src">출처: 뉴스프라임 보도 · 2026-11-06<br><span class="org"><a href="http://www.newsprime.co.kr/news/article.html?no=754033" target="_blank" rel="noopener">원문 보기 &#8599;</a></span></p></article><article class="nc"><span class="kick">해외 · 체험 매장</span><h3>라네즈, 립마스크 체험대</h3><p class="flow"><span class="s">라네즈가 립마스크 <span class="n">믹스앤매치 체험대</span>를 선보입니다.</span><span class="s">글로벌 성장을 겨냥해 체험형 매장을 늘립니다.</span><span class="s read">K뷰티 체험 매장의 <span class="n">현장 숏폼</span>을 구독으로 맡습니다.</span></p><p class="src">출처: Modern Retail · 2026-11-06<br><span class="org"><a href="https://www.modernretail.co/marketing/k-beauty-brand-laneige-bets-on-experiential-retail-with-a-mix-and-match-lip-mask-station/" target="_blank" rel="noopener">원문 보기 &#8599;</a></span></p></article></div><div class="apply"><span class="apply-tag">💡 조선혁신소 AI가 제안하는 기획안</span><ul><li>「현지 매장 영상 구독」 · 호주 진출 K소비재 · 샘플 1편</li><li>「매장용 영상 구독」 · 美 매장 입점 K뷰티 · 목차 1장</li><li>「체험 매장 숏폼 구독」 · K뷰티 브랜드 · 시안 1장</li></ul></div></div><div class="wm">조선혁신소</div></section></div><div class="frame"><section class="slide"><div class="inner"><span class="chip"><i></i>콘텐츠 업계 동향 ①<span class="no">03 / 12</span></span><h2 class="stitle">콘텐츠 업계 동향 ①</h2><div class="rule"></div><p class="lead">콘텐츠가 <span class="n">숏폼 판매 · 드라마 광고 · AI 답변</span>으로 갑니다.</p><div class="row"><article class="nc"><span class="kick">숏폼 커머스</span><h3>크리에이터 커머스 172%↑</h3><p class="flow"><span class="s">크리에이터 커머스 취급고가 <span class="n">172%</span> 늘었다는 보도입니다.</span><span class="s">숏폼 취급고도 <span class="n">129%</span> 늘었다고 전합니다.</span><span class="s read">숏폼이 <span class="n">판매 채널</span>이 됩니다.</span></p><p class="src">출처: 한국경제·연합뉴스 보도 · 2026-11-06<br><span class="org"><a href="https://www.hankyung.com/article/202611060235g" target="_blank" rel="noopener">원문 1 &#8599;</a> · <a href="https://www.yna.co.kr/view/AKR20261106050400030" target="_blank" rel="noopener">원문 2 &#8599;</a></span></p></article><article class="nc"><span class="kick">숏폼 드라마</span><h3>브랜드, 숏폼 드라마로</h3><p class="flow"><span class="s">MZ 사이에 「2분의 도파민」 <span class="n">숏폼 드라마</span>가 뜹니다.</span><span class="s">P&amp;G 네이티브는 「더 골든 페어 어페어」를 냈습니다.</span><span class="s read">광고가 <span class="n">드라마 형식</span>으로 갑니다.</span></p><p class="src">출처: 청년일보 보도 · 2026-11-08<br><span class="org"><a href="https://www.youthdaily.co.kr/news/article.html?no=229469" target="_blank" rel="noopener">원문 보기 &#8599;</a></span></p></article><article class="nc"><span class="kick">GEO 플랫폼</span><h3>매경 「MKPICK」</h3><p class="flow"><span class="s">GF M&amp;C가 매일경제와 「MKPICK」을 선보였습니다.</span><span class="s">콘텐츠 기반 GEO 플랫폼으로 「원본 보강」을 내세웁니다.</span><span class="s read">브랜드 홍보가 <span class="n">AI 답변</span> 안으로 갑니다.</span></p><p class="src">출처: 매일경제 보도 · 2026-11-07<br><span class="org"><a href="https://www.mk.co.kr/article/12191511" target="_blank" rel="noopener">원문 보기 &#8599;</a></span></p></article></div><div class="apply"><span class="apply-tag">&#128161; 우리 회사 적용</span><ul><li>숏폼 커머스 성장 사례 1장 — 크리에이터 커머스</li><li>브랜드 숏폼 드라마 사례 1장 — P&amp;G 네이티브</li><li>GEO 플랫폼 사례 1장 — 매경 MKPICK</li></ul></div></div><div class="wm">조선혁신소</div></section></div><div class="frame"><section class="slide"><div class="inner"><span class="chip"><i></i>콘텐츠 업계 동향 ②<span class="no">04 / 12</span></span><h2 class="stitle">콘텐츠 업계 동향 ②</h2><div class="rule"></div><div class="row"><article class="nc"><span class="kick">뷰티 캐릭터</span><h3>더마비 × 버터베어</h3><p class="flow"><span class="s">더마비가 「버터베어」 협업 기획 제품 3종을 냈습니다.</span><span class="s">버터베어는 방콕에서 시작한 베이커리의 곰 마스코트입니다.</span><span class="s read">바디케어도 <span class="n">캐릭터 기획</span>으로 고릅니다.</span></p><p class="src">출처: 뉴스1 보도 · 2026-11-07<br><span class="org"><a href="https://www.news1.kr/industry/distribution/6345794" target="_blank" rel="noopener">원문 보기 &#8599;</a></span></p></article><article class="nc"><span class="kick">아이돌 굿즈</span><h3>투바투 × 팝마트</h3><p class="flow"><span class="s">팝마트가 투바투 캐릭터 「뿔바투」 굿즈 3종을 냈습니다.</span><span class="s">「STAR 시리즈」로 6일 출시했습니다.</span><span class="s read">아이돌 캐릭터가 <span class="n">아트토이</span>로 갑니다.</span></p><p class="src">출처: 싱글리스트 보도 · 2026-11-09<br><span class="org"><a href="https://www.slist.kr/news/articleView.html?idxno=779978" target="_blank" rel="noopener">원문 보기 &#8599;</a></span></p></article><article class="nc"><span class="kick">편의점 IP</span><h3>「리센느빵」 200만 개</h3><p class="flow"><span class="s">CU 「리센느빵」이 한 달도 안 돼 <span class="n">200만 개</span>를 넘겼습니다.</span><span class="s">동아오츠카 등과 「리센느 유니버스」 프로젝트도 합니다.</span><span class="s read">중소돌도 <span class="n">편의점 IP</span>로 팔립니다.</span></p><p class="src">출처: 코리아리포트 보도 · 2026-11-06<br><span class="org"><a href="https://www.koreareport.co.kr/news/articleView.html?idxno=54387" target="_blank" rel="noopener">원문 보기 &#8599;</a></span></p></article></div><div class="apply"><span class="apply-tag">&#128161; 우리 회사 적용</span><ul><li>바디케어 캐릭터 기획 1장 — 더마비 × 버터베어</li><li>아이돌 캐릭터 아트토이 1장 — 팝마트 뿔바투</li><li>편의점 IP 빵 1장 — CU 리센느빵</li></ul></div></div><div class="wm">조선혁신소</div></section></div><div class="frame"><section class="slide"><div class="inner"><span class="chip"><i></i>AI 최신 동향<span class="no">05 / 12</span></span><h2 class="stitle">AI 최신 동향</h2><div class="rule"></div><div class="row"><article class="nc"><span class="kick">보안 협력</span><h3>OpenAI × Hacktron</h3><p class="flow"><span class="s">OpenAI가 Hacktron과 손잡고 취약점을 찾습니다.</span><span class="s">외부 서비스 연결도 시험하며 방어를 강화합니다.</span><span class="s read">AI 서비스는 <span class="n">외부 연결</span>부터 점검합니다.</span></p><p class="src">출처: OpenAI 공식 블로그 · 2026-11-06<br><span class="org"><a href="https://openai.com/index/partnering-with-hacktron" target="_blank" rel="noopener">원문 보기 &#8599;</a></span></p></article><article class="nc"><span class="kick">업무 활용</span><h3>Merge, 마케팅까지 AI</h3><p class="flow"><span class="s">Merge가 GPT-6 Astra · Codex 등을 씁니다.</span><span class="s">코드 리뷰 · 마케팅 · 영업 보고 준비까지 맡깁니다.</span><span class="s read">AI가 <span class="n">마케팅 실무</span>로 들어옵니다.</span></p><p class="src">출처: OpenAI 공식 블로그 · 2026-11-05<br><span class="org"><a href="https://openai.com/index/merge-builds-with-openai" target="_blank" rel="noopener">원문 보기 &#8599;</a></span></p></article><article class="nc"><span class="kick">6G 오픈소스</span><h3>NVIDIA, 6G 연구 도구</h3><p class="flow"><span class="s">NVIDIA가 무선 SW 「Aerial」을 오픈소스로 낸 지 1년입니다.</span><span class="s">Sionna 등과 함께 6G 연구의 기반이 됩니다.</span><span class="s read">통신 연구도 <span class="n">오픈소스</span>로 빨라집니다.</span></p><p class="src">출처: NVIDIA 공식 블로그 · 2026-11-06<br><span class="org"><a href="https://blogs.nvidia.com/blog/telco-open-source-tools-research-6g-networks/" target="_blank" rel="noopener">원문 보기 &#8599;</a></span></p></article></div><div class="apply"><span class="apply-tag">&#128161; 우리 회사 적용</span><ul><li>AI 보안 협력 1장 — OpenAI × Hacktron</li><li>마케팅 AI 활용 1장 — Merge</li><li>6G 오픈소스 도구 1장 — NVIDIA Aerial</li></ul></div></div><div class="wm">조선혁신소</div></section></div><div class="frame"><section class="slide"><div class="inner"><span class="chip"><i></i>소비시장 동향 ①<span class="no">06 / 12</span></span><h2 class="stitle">소비시장 동향 ①</h2><div class="rule"></div><div class="row"><article class="nc"><span class="kick">ESG 실천</span><h3>AI 환경교육 · 격투기 후원</h3><ul class="dl"><li><b>한국미래환경협회</b><p>슈퍼트랙과 <span class="n">AI · 로봇</span> 기반 환경교육 · ESG에 협력합니다.</p><a href="https://economist.co.kr/article/view/ecn202611060016">기사 보기</a></li><li><b>굽네치킨</b><p>종합격투기 후원을 이어 <span class="n">스포츠 ESG</span>를 넓힙니다.</p><a href="https://www.shinailbo.co.kr/news/articleView.html?idxno=5080674">기사 보기</a></li></ul><p class="src">국내 매체 보도 · 2026-11-08</p></article><article class="nc"><span class="kick">지원 사업</span><h3>배달앱 상한제 · 백제문화제</h3><ul class="dl"><li><b>배달앱 수수료</b><p><span class="n">15% 상한제</span>가 소상공인 부담을 못 던다는 지적이 나왔습니다.</p><a href="https://www.klnews.co.kr/news/articleView.html?idxno=323398">기사 보기</a></li><li><b>백제문화제</b><p>윤용근 의원이 <span class="n">세계화 국비</span> 지원을 촉구했습니다.</p><a href="https://www.ggilbo.com/news/articleView.html?idxno=1191633">기사 보기</a></li></ul><p class="src">국내 매체 보도 · 2026-11-08</p></article><article class="nc"><span class="kick">소비 흐름</span><h3>극단적 가성비 · 1만원 밥솥</h3><ul class="dl"><li><b>유통 양극화</b><p>중간이 사라지고 <span class="n">극단적 가성비 · 초프리미엄</span>으로 갈립니다.</p><a href="https://www.techm.kr/news/articleView.html?idxno=157015">기사 보기</a></li><li><b>가성비 대체템</b><p>이마트 와우샵 <span class="n">1만원 마카롱 밥솥</span>을 기자가 써봤습니다.</p><a href="https://www.edaily.co.kr/News/Read?newsId=01118486645643752&amp;mediaCodeNo=257">기사 보기</a></li></ul><p class="src">국내 매체 보도 · 2026-11-08</p></article></div><div class="apply"><span class="apply-tag">&#128161; 우리 회사 적용</span><ul><li>배달앱 수수료 상한제 안내 숏폼 기획 1장</li><li>기업 환경교육 캠페인 현장 숏폼 제안 1장</li><li>1만원 가성비 대체템 비교 숏폼 제안 1장</li></ul></div></div><div class="wm">조선혁신소</div></section></div><div class="frame"><section class="slide"><div class="inner"><span class="chip"><i></i>소비시장 동향 ②<span class="no">07 / 12</span></span><h2 class="stitle">소비시장 동향 ②</h2><div class="rule"></div><div class="row"><article class="nc"><span class="kick">소비 축제</span><h3>중기부 × 중소돌, 코그페</h3><p class="flow"><span class="s">중기부가 중소돌과 <span class="n">「상생 대작전」</span> 영상을 냈습니다.</span><span class="s">15일까지 열리는 「코그페」 홍보에 나섭니다.</span><span class="s read">참여 상점엔 <span class="n">상품 소개 숏폼</span>을 제안합니다.</span></p><p class="src">출처: 뉴스1 보도 · 2026-11-09<br><span class="org"><a href="https://www.news1.kr/industry/sb-founded/6346147" target="_blank" rel="noopener">원문 보기 &#8599;</a></span></p></article><article class="nc"><span class="kick">면세 쇼핑</span><h3>면세점 「코듀페」 25%</h3><p class="flow"><span class="s">「코듀페」는 「코리아 그랜드 페스티벌」 연계 쇼핑 행사입니다.</span><span class="s">전국 면세점 25곳이 최대 <span class="n">25%</span> 할인합니다.</span><span class="s read">참여 면세점엔 <span class="n">외국어 상품 숏폼</span>을 제안합니다.</span></p><p class="src">출처: 조세일보 보도 · 2026-11-06<br><span class="org"><a href="http://www.joseilbo.com/news/news_read.php?uid=579141&amp;class=8&amp;grp=" target="_blank" rel="noopener">원문 보기 &#8599;</a></span></p></article><article class="nc"><span class="kick">정원 공모</span><h3>남산 작가정원 5곳 공모</h3><p class="flow"><span class="s">서울시가 남산에 작가정원 5곳을 조성합니다.</span><span class="s">「2027 서울국제정원박람회」 작가정원을 공모합니다.</span><span class="s read">참가 작가엔 <span class="n">정원 조성 과정 영상</span>을 제안합니다.</span></p><p class="src">출처: 이데일리 보도 · 2026-11-09<br><span class="org"><a href="https://www.edaily.co.kr/News/Read?newsId=01620326645644080&amp;mediaCodeNo=257" target="_blank" rel="noopener">원문 보기 &#8599;</a></span></p></article></div><div class="apply"><span class="apply-tag">&#128161; 우리 회사 적용</span><ul><li>코그페 참여 상점 상품 소개 숏폼 4편</li><li>코듀페 참여 면세점 외국어 상품 숏폼 4편</li><li>정원박람회 참가 작가 조성 과정 영상 4편</li></ul></div></div><div class="wm">조선혁신소</div></section></div><div class="frame"><section class="slide"><div class="inner"><span class="chip"><i></i>판촉 품목 검색 수요<span class="no">08 / 12</span></span><h2 class="stitle">판촉 품목 검색 수요</h2><div class="rule"></div><div class="row"><article class="nc"><span class="kick">겨울 채비</span><h3>담요 검색, 12.5% 증가</h3><p class="flow"><span class="s">담요는 <span class="n">37,920건</span>, 1주 전보다 12.5% 늘었습니다.</span><span class="s">우산도 11.4% 올라 43,830건입니다.</span><span class="s read">날이 찹니다. <span class="n">담요 · 우산</span>을 겨울 사은품으로 앞세웁니다.</span></p><p class="src">출처: 네이버 검색광고 키워드 도구 · 2026-11-09 수집</p></article><article class="nc"><span class="kick">연말 행사</span><h3>판촉물 검색, 10.0% 증가</h3><p class="flow"><span class="s">판촉물은 <span class="n">26,300건</span>, 1주 전보다 10.0% 늘었습니다.</span><span class="s">웰컴키트는 4.0% 늘고, 기념품은 1.6% 줄었습니다.</span><span class="s read">송년 문의가 옵니다. <span class="n">연말 단가표</span>를 미리 냅니다.</span></p><p class="src">출처: 네이버 검색광고 키워드 도구 · 2026-11-09 수집</p></article><article class="nc"><span class="kick">연말 선물</span><h3>텀블러, 6.2% 증가</h3><p class="flow"><span class="s">텀블러는 <span class="n">125,800건</span>, 1주 전보다 6.2% 늘었습니다.</span><span class="s">보조배터리는 4.8% 줄어 159,900건입니다.</span><span class="s read">모수가 큰 두 품목입니다. <span class="n">텀블러 묶음</span>을 먼저 제안합니다.</span></p><p class="src">출처: 네이버 검색광고 키워드 도구 · 2026-11-09 수집</p></article></div><p class="foot-note">네이버 검색광고 월간 검색수입니다. <span class="n">구매가 아니라 찾는 횟수</span>입니다.</p></div><div class="wm">조선혁신소</div></section></div><div class="frame"><section class="slide"><div class="inner"><span class="chip"><i></i>콘텐츠 기획 제안<span class="no">09 / 12</span></span><h2 class="stitle">콘텐츠 기획 제안</h2><div class="rule"></div><div class="wo"><div class="wo-r wo-h"><span>만들 것</span><span>규격</span><span>채널</span><span>타깃</span><span>근거</span><span style="text-align:right">마감</span></div><div class="wo-r"><div><div class="wo-t">코듀페 참여 면세점 「외국어 상품 숏폼」 제안 4장</div><p class="wo-why">「코듀페」에 면세점 25곳이 최대 25% 할인합니다.</p></div><div class="wo-fmt"><i class="mock sl"></i><em>16:9<br>4장</em></div><div class="wo-c">영업 제안서</div><div class="wo-c mut">참여 면세점</div><span class="wo-src">07쪽</span><div class="wo-due">11/10<small>화</small></div></div><div class="wo-r"><div><div class="wo-t">빵 · 디저트 브랜드 「호빵 · 붕어빵 숏폼」 제안 1장</div><p class="wo-why">호빵 3위→2위(+58%), 붕어빵 +46%입니다.</p></div><div class="wo-fmt"><i class="mock sl"></i><em>16:9<br>1장</em></div><div class="wo-c">영업 제안서</div><div class="wo-c mut">빵 · 디저트 브랜드</div><span class="wo-src">12쪽</span><div class="wo-due">11/11<small>수</small></div></div><div class="wo-r"><div><div class="wo-t">전북 투자 유치 스타트업 「피칭 숏폼 구독」 제안 4장</div><p class="wo-why">전북도가 1800억 원 규모 자펀드 조성을 추진합니다.</p></div><div class="wo-fmt"><i class="mock sl"></i><em>16:9<br>4장</em></div><div class="wo-c">영업 제안서</div><div class="wo-c mut">전북 스타트업</div><span class="wo-src">01쪽</span><div class="wo-due">11/12<small>목</small></div></div><div class="wo-r"><div><div class="wo-t">美 매장 입점 K뷰티 「매장용 영상 구독」 제안 4장</div><p class="wo-why">에이피알이 연내 CVS 약 3000개 매장에 입점합니다.</p></div><div class="wo-fmt"><i class="mock sl"></i><em>16:9<br>4장</em></div><div class="wo-c">영업 제안서</div><div class="wo-c mut">美 진출 K뷰티 브랜드</div><span class="wo-src">02쪽</span><div class="wo-due">11/13<small>금</small></div></div><div class="wo-r"><div><div class="wo-t">인테리어 소품 브랜드 「스노우볼 숏폼」 제안 1장</div><p class="wo-why">워터볼 +53%, 크리스마스스노우볼 3위→2위입니다.</p></div><div class="wo-fmt"><i class="mock sl"></i><em>16:9<br>1장</em></div><div class="wo-c">영업 제안서</div><div class="wo-c mut">인테리어 소품 브랜드</div><span class="wo-src">12쪽</span><div class="wo-due">11/16<small>월</small></div></div></div><div class="srcbar"><b>정하는 방식</b>마감이 빠른 순으로 놓았습니다. 같은 주제는 5영업일에 한 번만 올리고, 다시 올릴 때는 이번 주 핵심으로 표시합니다.</div></div><div class="wm">조선혁신소</div></section></div><div class="frame"><section class="slide"><div class="inner"><span class="chip"><i></i>AI 기술 적용 제안<span class="no">10 / 12</span></span><h2 class="stitle">AI 기술 적용 제안</h2><div class="rule"></div><p class="lead">오늘은 <span class="n">스토리 영상 · 문구 관문 · 홍보 제작실</span>을 봅니다.</p><div class="row"><article class="nc"><span class="kick">AI 숏폼 규제</span><h3>中, AI 숏폼 드라마 단속</h3><p class="flow"><span class="s">中 숏폼 드라마 <span class="n">43만 편</span> 중 AI 작품이 90% 이상입니다.</span><span class="s">스토리 영상 결과물의 AI 제작 표시 확인 필요.</span><span class="s read">완성 영상 끝에 <span class="n">AI 제작 표시</span>를 넣어 둡니다.</span></p><p class="src">근거: 연합뉴스 보도 · 2026-11-08<br><span class="org"><a href="https://www.yna.co.kr/view/AKR20261108050600083" target="_blank" rel="noopener">원문 보기 &#8599;</a></span></p></article><article class="nc"><span class="kick">GEO 조작</span><h3>허위 통계로 AI 추천 조작</h3><p class="flow"><span class="s">한국경제: 허위 통계 · 가짜 평가로 AI 답변을 조작한 사례.</span><span class="s">문구 관문이 출처 없는 통계를 거르는지 확인 필요.</span><span class="s read">통계 문장마다 <span class="n">출처 확인</span>을 거칩니다.</span></p><p class="src">근거: 한국경제 보도 · 2026-11-06<br><span class="org"><a href="https://www.hankyung.com/article/202611060223i" target="_blank" rel="noopener">원문 보기 &#8599;</a></span></p></article><article class="nc"><span class="kick">AI 학습 약관</span><h3>메타, AI 학습 약관 보류</h3><p class="flow"><span class="s">메타가 콘텐츠 AI 학습 약관 개정을 무기한 보류했습니다.</span><span class="s">홍보 제작실의 메타 광고 약관 점검 여부 확인 필요.</span><span class="s read">메타 <span class="n">광고 약관 변경</span>을 주 1회 확인합니다.</span></p><p class="src">근거: MBN 보도 · 2026-11-07<br><span class="org"><a href="http://mbn.mk.co.kr/pages/news/newsView.php?category=mbn00008&amp;news_seq_no=5229583" target="_blank" rel="noopener">원문 보기 &#8599;</a></span></p></article></div><div class="apply"><span class="apply-tag">&#128161; 우리 회사 적용</span><ul><li>스토리 영상: 완성 영상 끝에 AI 제작 표시 자막</li><li>문구 관문: 출처 없는 통계 문장 걸러내기</li><li>홍보 제작실: 메타 광고 약관 변경 주 1회 확인 칸</li></ul></div></div><div class="wm">조선혁신소</div></section></div><div class="frame"><section class="slide"><div class="inner"><span class="chip"><i></i>공공 입찰 · 경쟁 동향<span class="no">11 / 12</span></span><h2 class="stitle">공공 입찰 · 경쟁 동향</h2><div class="rule"></div><p class="lead">오늘은 <span class="n">직업교육 콘텐츠 · 정부 SNS · 칼로데이터</span>를 봅니다.</p><div class="row"><article class="nc"><span class="kick">위캔두잇 · 공공 입찰</span><h3>직종별 직업교육 콘텐츠</h3><p class="flow"><span class="s">대구보건대 「직종별 직업교육 콘텐츠 개발 용역」입니다.</span><span class="s">추정가 <span class="n">9,686만 원</span>, 마감일은 공고 확인 필요.</span><span class="s read">위캔두잇 캐릭터로 <span class="n">직장 예절 교안</span>을 제안합니다.</span></p><p class="src">출처: 나라장터 · 2026-11-05<br><span class="org"><a href="https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01811224&amp;bidPbancOrd=000" target="_blank" rel="noopener">원문 보기 &#8599;</a></span></p></article><article class="nc"><span class="kick">조선혁신소 · 공공 입찰</span><h3>정부대표 SNS 콘텐츠</h3><p class="flow"><span class="s">문체부 「정부대표 누리소통망(SNS) 콘텐츠 제작」입니다.</span><span class="s">추정가 <span class="n">4.1억 원</span>, 마감은 11/27입니다.</span><span class="s read">정부 SNS용 <span class="n">숏폼 · 카드뉴스</span>를 함께 맡습니다.</span></p><p class="src">출처: 나라장터 · 2026-11-06<br><span class="org"><a href="https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01814005&amp;bidPbancOrd=000" target="_blank" rel="noopener">원문 보기 &#8599;</a></span></p></article><article class="nc"><span class="kick">경쟁 · 칼로데이터</span><h3>칼로데이터 「Kaloboost」</h3><p class="flow"><span class="s">칼로데이터: 틱톡샵 분석에 인플루언서 · AI 콘텐츠를 잇는다고 밝힘.</span><span class="s">우리는 섭외 · 집행 · 성과 데이터가 없습니다(경쟁 정리 기준).</span><span class="s read">그쪽 <span class="n">틱톡샵 분석</span>을 우리 기획 근거와 견줍니다.</span></p><p class="src">출처: 한국경제·이데일리 보도 · 2026-11-06<br><span class="org"><a href="https://www.hankyung.com/article/202611057797O" target="_blank" rel="noopener">원문 1 &#8599;</a> · <a href="https://www.edaily.co.kr/News/Read?newsId=03503046645643096&amp;mediaCodeNo=257" target="_blank" rel="noopener">원문 2 &#8599;</a></span></p></article></div><div class="apply"><span class="apply-tag">&#128161; 우리 회사 적용</span><ul><li>위캔두잇: 직업교육 콘텐츠 공고 열어 마감·과업 확인</li><li>입찰·공모전: 정부대표 SNS 11/27 마감 등록</li><li>AI 영상 포맷 분석: 틱톡샵 상위 영상 포맷 비교 시험</li></ul></div></div><div class="wm">조선혁신소</div></section></div><div class="frame"><section class="slide"><div class="inner"><span class="chip"><i></i>상품 카테고리 진단표<span class="no">12 / 12</span></span><h2 class="stitle">상품 카테고리 진단표</h2><div class="rule"></div><div class="dwide">
+<div class="panel"><h4>중분류 진단표 · 소분류까지</h4>
+<table class="dtable"><thead><tr><th>순위 / 대분류 &gt; 중분류 › 소분류</th><th>현재지수</th><th>7일</th><th>40대 이상</th></tr></thead>
+<tbody><tr><td><span class="rk">01</span><span class="nb">화장품/미용 &gt; 바디케어</span></td><td>15.5</td><td class="up">↑ +7%</td><td>75%</td></tr><tr class="sub"><td><span class="sb">└</span><span class="nb">바디케어세트</span><span class="kw">논픽션바디세트 · 에르메스바디워시세트</span></td><td>1.4</td><td class="up">↑ +22%</td><td></td></tr><tr class="sub"><td><span class="sb">└</span><span class="nb">바디미스트/샤워코롱</span><span class="kw">클리어바디미스트 · 낫포유바디미스트</span></td><td>2.6</td><td class="up">↑ +17%</td><td></td></tr><tr><td><span class="rk">02</span><span class="nb">식품 &gt; 빵/베이커리</span></td><td>5.5</td><td class="up">↑ +7%</td><td>73%</td></tr><tr class="sub"><td><span class="sb">└</span><span class="nb">호빵/찐빵</span><span class="kw">삼립호빵 · 호빵</span></td><td>7.3</td><td class="up">↑ +35%</td><td></td></tr><tr class="sub"><td><span class="sb">└</span><span class="nb">일반빵</span><span class="kw">슈톨렌 · 치아바타</span></td><td>46.7</td><td class="up">↑ +7%</td><td></td></tr><tr><td><span class="rk">03</span><span class="nb">생활/건강 &gt; 문구/사무용품</span></td><td>71.7</td><td class="up">↑ +6%</td><td>65%</td></tr><tr class="sub"><td><span class="sb">└</span><span class="nb">다이어리/플래너</span><span class="kw">어드밴트캘린더 · 어드벤트캘린더</span></td><td>10.2</td><td class="up">↑ +19%</td><td></td></tr><tr class="sub"><td><span class="sb">└</span><span class="nb">카드/엽서/봉투</span><span class="kw">결혼식식권 · 청첩장</span></td><td>2.9</td><td class="up">↑ +12%</td><td></td></tr><tr><td><span class="rk">04</span><span class="nb">가구/인테리어 &gt; 인테리어소품</span></td><td>39.0</td><td class="up">↑ +5%</td><td>—</td></tr><tr class="sub"><td><span class="sb">└</span><span class="nb">워터볼</span><span class="kw">크리스마스스노우볼 · 스노우볼만들기</span></td><td>0.4</td><td class="up">↑ +53%</td><td></td></tr><tr class="sub"><td><span class="sb">└</span><span class="nb">오르골</span><span class="kw">회전목마오르골 · 코스트코오르골</span></td><td>1.1</td><td class="up">↑ +44%</td><td></td></tr></tbody></table>
+<p class="dnote">소분류 옆 회색 글씨는 그 안에서 순위가 뛴 검색어입니다.</p></div>
+<div class="dgrid big"><article><em>01 연말 바디 세트</em><b>바디케어</b><p>7일 +7%(지수 15.5)입니다. 바디케어세트 +22% · 바디미스트/샤워코롱 +17% · 풋케어 +15%. 일리윤 8위→5위(+22%), 록시땅핸드크림 4위→3위(+15%), 바디워시 +14%, 세트 안에선 에르메스바디워시세트 6위→3위, 록시땅어드벤트2026 4위 — 연말 선물용 바디 세트를 함께 찾는 듯합니다.</p></article><article><em>02 겨울 간식</em><b>빵/베이커리</b><p>7일 +7%(지수 5.5)입니다. 호빵/찐빵 +35%. 호빵 3위→2위(+58%), 붕어빵 4위(+46%), 삼립호빵 1위(+37%), 안흥찐빵 6위→5위(+36%), 붕어빵반죽 새로 10위, 슈톨렌 12위→9위 — 날이 추워지며 겨울 간식과 성탄 빵을 찾습니다.</p></article><article><em>03 연말 준비</em><b>문구/사무용품</b><p>7일 +6%(지수 71.7)입니다. 다이어리/플래너 +19% · 카드/엽서/봉투 +12%. 어드벤트캘린더 4위→2위(+90%), 크리스마스트리 8위→5위(+72%), 다이어리 +16%, 제본 12위→9위 — 성탄 · 새해 준비가 이어집니다.</p></article><article class="action"><em>04 오늘의 액션</em><b>성탄 소품</b><p>인테리어소품 7일 +5%(지수 39.0)입니다. 워터볼 +53% · 오르골 +44%(둘 다 지수 1 안팎, 모수 작음). 크리스마스스노우볼 3위→2위, 회전목마오르골 8위→4위, 무드등 6위→4위 — 성탄 소품을 찾습니다. 「스노우볼 숏폼」을 냅니다 — 09쪽입니다.</p></article></div></div>
+<div class="srcbar"><b>수집 소스</b>네이버 데이터랩 쇼핑인사이트 공식 API · 중분류 단위 일간 클릭 상대지수(판매량 아님) · 2026-11-09 수집</div></div><div class="wm">조선혁신소</div></section></div><div class="frame"><section class="slide kit"><div class="inner">
+<h2 class="stitle">Contact us</h2><div class="rule"></div>
+<p class="kit-sub">아이콘을 누르면 각 채널로 바로 연결됩니다.</p>
+<div class="chgrid"><a class="ch" href="https://joseonlab.co.kr"><img class="ch-ico" src="https://joseonlab.github.io/joseonlab-newsletter/assets/joseonlab.png" alt=""><span><span class="ch-nm">조선혁신소</span><span class="ch-id">joseonlab.co.kr</span></span><span class="arw">&#8599;</span></a><a class="ch" href="https://wecandoitlab.co.kr"><img class="ch-ico" src="https://joseonlab.github.io/joseonlab-newsletter/assets/wecandoitlab.png" alt=""><span><span class="ch-nm">위캔두잇</span><span class="ch-id">wecandoitlab.co.kr</span></span><span class="arw">&#8599;</span></a><a class="ch" href="https://instagram.com/joseonlab"><img class="ch-ico" src="https://joseonlab.github.io/joseonlab-newsletter/assets/instagram.png" alt=""><span><span class="ch-nm">조선혁신소</span><span class="ch-id">@joseonlab</span></span><span class="arw">&#8599;</span></a><a class="ch" href="https://instagram.com/joseontoon"><img class="ch-ico" src="https://joseonlab.github.io/joseonlab-newsletter/assets/instagram.png" alt=""><span><span class="ch-nm">조선툰</span><span class="ch-id">@joseontoon</span></span><span class="arw">&#8599;</span></a><a class="ch" href="https://youtube.com/@wecandoit_kr"><img class="ch-ico" src="https://joseonlab.github.io/joseonlab-newsletter/assets/youtube.png" alt=""><span><span class="ch-nm">위캔두잇</span><span class="ch-id">@wecandoit_kr</span></span><span class="arw">&#8599;</span></a><div class="ch"><svg class="ch-ico" viewBox="0 0 24 24" role="img" aria-label="직통전화"><rect width="24" height="24" rx="6" fill="#1B3357"></rect><path d="M8.6 6.4c.5 0 .8.3 1 .7l.8 1.9c.2.4.1.9-.3 1.2l-.9.7c.7 1.5 1.9 2.7 3.4 3.4l.7-.9c.3-.4.8-.5 1.2-.3l1.9.8c.4.2.7.5.7 1v2c0 .7-.6 1.2-1.3 1.1C10.6 17.4 6.6 13.4 6.1 8c-.1-.7.4-1.3 1.1-1.3h1.4z" fill="#fff"></path></svg><span><span class="ch-nm">직통전화</span><span class="ch-id">070-4736-5017</span></span></div></div>
+<div class="kit-foot"><span style="color:var(--ttl);font-weight:900">조선혁신소</span>
+<span>콘텐츠와 기술로 새로운 가능성을 만듭니다.</span></div></div></section></div></div>
+<script>(function(){function f(){document.querySelectorAll('.frame').forEach(function(x){
+x.firstElementChild.style.setProperty('--s',x.clientWidth/1280)});
+document.querySelectorAll('.slide .inner').forEach(function(e){var W=1080,k=1;e.style.transform='';e.style.width=W+'px';for(var i=0;i<30;i++){var h=e.clientHeight,n=e.scrollHeight;if(n*k<=h+0.5)break;k=Math.min(h/n,k*0.995);e.style.width=(W/k).toFixed(2)+'px';e.style.transform='scale('+k.toFixed(4)+')'}})}
+f();addEventListener('resize',f);if(document.fonts&&document.fonts.ready){document.fonts.ready.then(f)}})();</script>
